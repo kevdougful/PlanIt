@@ -28,6 +28,12 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// expose db to router
+app.use(function(req, res, next) {
+  req.db = db;
+  next();
+});
+
 app.use('/', routes);
 app.use('/users', users);
 
