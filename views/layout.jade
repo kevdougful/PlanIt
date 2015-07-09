@@ -21,7 +21,16 @@ html
             li.active
               a(href="#") Home
             li
-              a(href="#") Request
+              .btn-group.navbar-btn
+                button.btn Requests
+                button.btn.dropdown-toggle(data-toggle="dropdown")
+                  span.caret
+                ul.dropdown-menu
+                  li Create new..
+                  li View requests...
+                  li Action 3
+                  li.divider
+                  li Action 4
             li
               a(href="#") Tasks
             li
