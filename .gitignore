@@ -1,1 +1,5 @@
+# npm installed dependencies
 node_modules/
+
+# preprocessor generated CSS
+public/stylesheets/style.css
