@@ -1,12 +1,6 @@
 $(function() {
-	$('#tags').selectize({
-		delimiter: ',',
-		persist: true,
-		create: function(input) {
-			return {
-				value: input,
-				text: input
-			}
-		}
+	$('#requestor-select').selectize({
+		create: true,
+		sortField: 'text'
 	});
 });

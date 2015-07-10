@@ -1,7 +1,12 @@
 extends layout
 
 block content
-  form.form#testform(method="post", action="#")
-    input#tags.form-control(type="text")
-      
+  .container(style="width: 50%")
+    form.form
+      label(for="#requestor-select") Who is requesting?
+      select#requestor-select.form-control.selectized()
+        option(value="1") chris
+        option(value="2") kevin
+        option(value="3") jessica
+        option(value="4") joe         
   script(src="javascripts/selectize-controls.js")
