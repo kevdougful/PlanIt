@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  form.form#testform(method="post", action="#")
+    input#tags.form-control(type="text")
+      
+  script(src="javascripts/selectize-controls.js")
