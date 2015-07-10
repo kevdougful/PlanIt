@@ -3,4 +3,4 @@ node_modules/
 
 # preprocessor generated CSS
 public/stylesheets/style.css
-public/stylesheets/selectize.css
+#public/stylesheets/selectize.css
