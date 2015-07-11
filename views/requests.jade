@@ -3,6 +3,21 @@ extends layout
 block content
 	ul.nav.nav-tabs
 		li.active
-			a(href="#new-request", data-toggle="tab") New Request
+			a(href="#newRequest", data-toggle="tab") New Request
 		li
-			a(href="#existing-requests", data-toggle="tab") Existing Requests
+			a(href="#existingRequests", data-toggle="tab") Existing Requests
+	
+	.tab-content
+		#newRequest.tab-pane.active
+			form#newRequestForm(name="newRequest", method="post", action="/newRequest")
+				.panel.panel-default
+					.panel-heading
+						.panel-title People
+					.panel-body
+						.form-group
+							label(for="stakeholder") Stakeholder
+							input#stakeholder.form-control(type="text", name="stakeholder")
+						.form-group
+							label(for="others") Others
+							select#others.form-control(type="text", name="others")
+		#existingRequests
